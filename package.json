@@ -1,0 +1,30 @@
+{
+  "name": "difi",
+  "version": "1.0.0",
+  "description": "difi is a simple data manipulation, processing & cleaning utility for your command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/justjcurtis/difi.git"
+  },
+  "keywords": [
+    "CLI",
+    "data",
+    "manipulation",
+    "data",
+    "processing",
+    "data",
+    "cleaning",
+    "data",
+    "cleanup"
+  ],
+  "author": "justjcurtis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justjcurtis/difi/issues"
+  },
+  "homepage": "https://github.com/justjcurtis/difi#readme"
+}
