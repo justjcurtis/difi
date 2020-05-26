@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "difi is a simple data manipulation, processing & cleaning utility for your command line",
   "main": "index.js",
+  "preferGlobal": true,
+  "bin": "./commands.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,5 +28,9 @@
   "bugs": {
     "url": "https://github.com/justjcurtis/difi/issues"
   },
-  "homepage": "https://github.com/justjcurtis/difi#readme"
+  "homepage": "https://github.com/justjcurtis/difi#readme",
+  "dependencies": {
+    "commander": "^5.1.0",
+    "inquirer": "^7.1.0"
+  }
 }
