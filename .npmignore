@@ -1,0 +1,7 @@
+.vscode/
+.node_modules/
+TestData/
+commands.spec.js
+Changelog.md
+Licence.md
+yarn.lock
