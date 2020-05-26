@@ -83,7 +83,7 @@ See also the list of [contributors](https://github.com/justjcurtis/difi/contribu
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [Licence.md](https://github.com/justjcurtis/difi/Licence.md) file for details
 
 ## Acknowlegements
 
