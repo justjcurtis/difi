@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 cli = require('commander')
-prompt = require('inquirer')
 path = require('path')
 
 const { dProcess, compare } = require('./index.js')
@@ -26,7 +25,7 @@ cli
     .option('-rb, --remove_before <keyword>', 'removes entry before keyword')
     .option('-ra, --remove_after <keyword>', 'removes entry after keyword')
     .option('-p, --print', 'prevents saving and instead, prints output to console')
-    .option('-o, --output', 'specifies output file (defaults to inputfile_difi')
+    .option('-o, --output', 'specifies output file (defaults to inputfile_difi)')
     .action(function(filepath, args){
         if(args.input_delimiter == undefined){
             args.input_delimiter = '\n'

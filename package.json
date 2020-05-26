@@ -16,11 +16,8 @@
     "CLI",
     "data",
     "manipulation",
-    "data",
     "processing",
-    "data",
     "cleaning",
-    "data",
     "cleanup"
   ],
   "author": "justjcurtis",
@@ -30,8 +27,7 @@
   },
   "homepage": "https://github.com/justjcurtis/difi#readme",
   "dependencies": {
-    "commander": "^5.1.0",
-    "inquirer": "^7.1.0"
+    "commander": "^5.1.0"
   },
   "devDependencies": {
     "jest": "^26.0.1"
