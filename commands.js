@@ -15,6 +15,7 @@ cli
     .description('processes file supplied with processing flags supplied.')
     .option('-b, --blank_entries', 'removes blank entries')
     .option('-d, --duplicates', 'remove duplicates')
+    .option('-i, --ignore_case', 'ignores case when comparing entries to keywords')
     .option('-l, --lower', 'make file lower case')
     .option('-id, --input_delimiter', 'specifies input delimiter (defaults to \\n)')
     .option('-od, --output_delimiter', 'specifies output delimiter (defaults to input delimiter)')
@@ -63,16 +64,18 @@ cli
         if(args.output_delimiter == undefined){
             args.output_delimiter = args.input_delimiter
         }
-        if(!args.print){
-            if(args.output == undefined){
-                let parsedPath = path.parse(filepath)
-                args.output = path.join(parsedPath.dir, parsedPath.name + "_difiCompare" + parsedPath.ext)
-            }
-        }
+
         if(args.flip){
             let _ = filepathA;
             filepathA = filepathB;
             filepathB = _;
+        }
+
+        if(!args.print){
+            if(args.output == undefined){
+                let parsedPath = path.parse(filepathB)
+                args.output = path.join(parsedPath.dir, parsedPath.name + "_difiCompare" + parsedPath.ext)
+            }
         }
         compare(filepathA, filepathB, args)
     })

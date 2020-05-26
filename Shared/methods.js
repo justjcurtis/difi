@@ -40,21 +40,33 @@ const lowerCase = lines =>{
     })
 }
 
-const removeKeyword = (lines, keyword)=>{
+const removeKeyword = (lines, keyword, ignoreCase)=>{
     return lines.filter(line =>{
-        return !line.includes(keyword)
+        if(ignoreCase){
+            return !line.toLowerCase().includes(keyword.toLowerCase())
+        }else{
+            return !line.includes(keyword)
+        }
     })
 }
-const removeBeforeKeyword = (lines, keyword)=>{
+const removeBeforeKeyword = (lines, keyword, ignoreCase)=>{
     return lines.filter((value, index, self) =>{
         if(index == self.length -1){return true}
-        return !self[index + 1].includes(keyword)
+        if(ignoreCase){
+            return !self[index + 1].toLowerCase().includes(keyword.toLowerCase())
+        }else{
+            return !self[index + 1].includes(keyword)
+        }
     })
 }
-const removeAfterKeyword = (lines, keyword)=>{
+const removeAfterKeyword = (lines, keyword, ignoreCase)=>{
     return lines.filter((value, index, self) =>{
         if(index == 0){return true}
-        return !self[index - 1].includes(keyword)
+        if(ignoreCase){
+            return !self[index - 1].toLowerCase().includes(keyword.toLowerCase())
+        }else{
+            return !self[index - 1].includes(keyword)
+        }
     })
 }
 

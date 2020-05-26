@@ -27,15 +27,15 @@ const dProcess = (file, args) =>{
     }
     if(args.remove_keyword){
         console.log(`Removing entries containing keyword: ${args.remove_keyword}..`)
-        lines = removeKeyword(lines, args.remove_keyword);
+        lines = removeKeyword(lines, args.remove_keyword, args.ignore_case);
     }
     if(args.remove_after){
         console.log(`Removing entries after keyword: ${args.remove_after}..`)
-        lines = removeAfterKeyword(lines, args.remove_after);
+        lines = removeAfterKeyword(lines, args.remove_after, args.ignore_case);
     }
     if(args.remove_before){
         console.log(`Removing entries before keyword: ${args.remove_before}..`)
-        lines = removeBeforeKeyword(lines, args.remove_before);
+        lines = removeBeforeKeyword(lines, args.remove_before, args.ignore_case);
     }
     if(args.sort){
         console.log('Sorting entries..')
@@ -90,7 +90,7 @@ const compare = (filepathA, filepathB, args) =>{
             results = results.sort()
         }
         if(args.reverse){
-            results = result.reverse()
+            results = results.reverse()
         }
         if(args.print){
             console.log(`Missing keys for: ${filepathB}`)
