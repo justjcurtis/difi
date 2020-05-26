@@ -1,4 +1,4 @@
-# difi - V1.0.0
+# difi - V1.0.1
 
 A small cli for manipulating, processing & cleaning data.
 
@@ -12,7 +12,7 @@ All you need to use difi is a command line and node :)
 Simply open up a terminal and type 
 
 ```
-npm i difi -g
+npm i @justjcurtis/difi -g
 ```
 
 ## Usage
