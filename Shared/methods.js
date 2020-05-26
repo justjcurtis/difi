@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path');
 
 const readFile = (path, input_delimiter) => {
     let raw = fs.readFileSync(path, {encoding:'utf-8'});
@@ -56,9 +57,6 @@ const removeAfterKeyword = (lines, keyword)=>{
         return !self[index - 1].includes(keyword)
     })
 }
-
-const fs = require('fs');
-const path = require('path');
 
 const findInDir = (dir, filter, fileList = []) =>{
   const files = fs.readdirSync(dir);
