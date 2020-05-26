@@ -1,4 +1,7 @@
 # difi
+## V1.0.1 - 25/05/2020
+### Naming update
+- changed name to @justjcurtis/difi to avoid conflicts
 ## V1.0.0 - 25/05/2020
 ### Initial release :D
 #### process function [p] {inputFile} {args}

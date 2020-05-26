@@ -5,7 +5,7 @@ path = require('path')
 const { dProcess, compare } = require('./index.js')
 
 cli
-    .version('1.0.0')
+    .version('1.0.1')
     .description('a simple data manipulation, processing & cleaning utility.')
 
 cli
