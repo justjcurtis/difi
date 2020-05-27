@@ -10,7 +10,7 @@ const {
 } = require('./index.js')
 
 cli
-    .version('1.1.0')
+    .version('1.1.1')
     .description('a simple data manipulation, processing & cleaning utility.')
 
 cli

@@ -1,4 +1,8 @@
 # difi
+## V1.1.1 - 27/05/2020
+### Readme formatting
+- Fixed formatting issues in README
+- Removed unnecessary line from README
 ## V1.1.0 - 27/05/2020
 ### Search function
 - Added Ignore_case [-i] - *ignores case when searching for keys.*

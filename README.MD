@@ -1,4 +1,4 @@
-# difi - V1.1.0
+# difi - V1.1.1
 
 A small cli for manipulating, processing & cleaning data.
 
