@@ -2,6 +2,7 @@
 node_modules/
 TestData/
 *.spec.js
+*.txt
 package-lock.json
 Changelog.md
 Licence.md
