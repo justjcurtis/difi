@@ -37,6 +37,7 @@ const readFileAsync = async (path, input_delimiter) => {
 const writeFile = (data, path) => {
     fs.writeFileSync(path, data)
 }
+
 const removeDuplicates = lines => {
     let re = RegExp('^\s*$')
     return lines.filter((value, index, self) => {
