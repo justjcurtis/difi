@@ -1,6 +1,6 @@
 {
   "name": "@justjcurtis/difi",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "difi is a simple data manipulation, processing & cleaning utility for your command line",
   "main": "index.js",
   "preferGlobal": true,

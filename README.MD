@@ -1,4 +1,4 @@
-# difi - V1.1.0
+# difi - V1.1.1
 
 A small cli for manipulating, processing & cleaning data.
 
@@ -32,7 +32,6 @@ difi -h [command]
 
 #### **process|p** *[options] [filepath]* : processes file supplied with processing flags supplied.
 
-#### process function [p] {inputFile} {args}
 - Remove blank entries [-b] - *removes blank entries.*
 - Remove duplicates [-d] - *remove duplicates.*
 - Ignore case [-i] - *ignores case when comparing entries to keywords.*
@@ -60,6 +59,7 @@ difi -h [command]
 - Output [-o] - *specifies output file (defaults to inputfile_difiCompare.*
 
 #### **search|s** *[options] <startPath> <keys>* : search a file or directory structure using a list of keys.
+
 - Ignore_case [-i] - *ignores case when searching for keys.*
 - Recursive [-r] - *search recursively into subdirectories.*
 - Keys [-k] - *allows keys to be entered directly into the terminal as the second argument as comma seperated values.*
