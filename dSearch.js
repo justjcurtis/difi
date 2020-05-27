@@ -13,7 +13,7 @@ const dSearch = async (startPath, keys, args) => {
     if (args.keys) {
         keys = keys.split(',')
     } else {
-        keys = readFile(key, args.input_delimiter)
+        keys = readFile(keys, args.input_delimiter)
     }
     let originalKeys = keys.slice(0)
     if (args.ignore_case) {
@@ -184,7 +184,7 @@ const _searchFile = async (filepath, keys, args) => {
                         line: line,
                         key: i,
                         lineIndex: lineIndex,
-                        ocIndex: line.indexOf(key[i])
+                        ocIndex: line.indexOf(keys[i])
                     })
                 }
             } else {
