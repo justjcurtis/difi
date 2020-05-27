@@ -1,4 +1,4 @@
-# difi - V1.0.1
+# difi - V1.1.0
 
 A small cli for manipulating, processing & cleaning data.
 
@@ -37,7 +37,7 @@ difi -h [command]
 - Remove duplicates [-d] - *remove duplicates.*
 - Ignore case [-i] - *ignores case when comparing entries to keywords.*
 - lowercase [-l] - *make file lower case.*
-- Input delimiter [-id {delimiter}] - *specifies input delimiter (defaults to \\n).*
+- Input delimiter [-id {delimiter}] - *specifies input delimiter (defaults to \n).*
 - Output delimiter [-od {delimiter}] - *specifies output delimiter (defaults to input delimiter).*
 - Sorting [-s] - *sorts output.*
 - Reversing [-rv] - *reverses output (done after sort).*
@@ -52,17 +52,31 @@ difi -h [command]
 
 - Flip [-f] - *flips comparison tp show keys missing in the first file.*
 - Ignore case [-i] - *ignores case when comparing entries.*
-- Input delimiter [-id {delimiter}] - *specifies input delimiter (defaults to \\n).*
+- Input delimiter [-id {delimiter}] - *specifies input delimiter (defaults to \n).*
 - Output delimiter [-od {delimiter}] - *specifies output delimiter (defaults to input delimiter).*
 - Sorting [-s] - *sorts output.*
 - Reversing [-rv] - *reverses output (done after sort).*
 - Print [-p] - *prevents saving and instead, prints output to console.*
 - Output [-o] - *specifies output file (defaults to inputfile_difiCompare.*
+
+#### **search|s** *[options] <startPath> <keys>* : search a file or directory structure using a list of keys.
+- Ignore_case [-i] - *ignores case when searching for keys.*
+- Recursive [-r] - *search recursively into subdirectories.*
+- Keys [-k] - *allows keys to be entered directly into the terminal as the second argument as comma seperated values.*
+- Input_delimiter [-id] <delimiter> - *specifies input delimiter (defaults to \n).*
+- Output_delimiter [-od] <delimiter> - *specifies output delimiter (defaults to input delimiter).*
+- Occurances [-oc] - *list occurances of each key along with the minimum occurance for all keys.*
+- Detail [-d] - *show filepath & line number for each match.*
+- Blacklist [-bl] <csvFilter> - *blacklist filetypes to be excluded from the search in the form of comma seperated values.*
+- Whitelist [-wl] <csvFilter> - *whitelist filetypes to be included in the search in the form of comma seperated values (overrides blacklist).*
+- Sort [-s] - *sort output by key.*
+- Sort_occurance [-so] - *sort output by occurance, enables -oc & overrides -s.*
+- Reverse [-rv] - *reverses output (done after sort).*
+- Print [-p] - *prevents saving and instead, prints output to console.*
+- Output [-o] <outputPath> - *specifies output file for search results (defaults toparentDir_of_startPath/startPathFileName_difiSearch.txt).*
+
 ## Roadmap
 
-- Add search function for searching all files within provided directory (& subdirectories if indicated by flags) for keys provided; showing output in various forms determined by flags provided.
-- Add unit tests for search function.
-- Increase unit test coverage to include shared method files.
 - Extend functionality by accepting regex patterns for searching, keywords etc.
 - much more...
 
