@@ -1,7 +1,11 @@
 .vscode/
-.node_modules/
+node_modules/
 TestData/
-commands.spec.js
+*.spec.js
+*.txt
+*.xtx
+package-lock.json
 Changelog.md
 Licence.md
 yarn.lock
+.gitignore

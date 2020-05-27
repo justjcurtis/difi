@@ -1,4 +1,18 @@
 const fs = require('fs')
+let path = require('path');
+let exec = require('child_process').exec;
+
+const  cli = (args, cwd) =>{
+    return new Promise(resolve => { 
+      exec(`node ${path.resolve('./commands.js')} ${args.join(' ')}`,
+      { cwd }, 
+      (error, stdout, stderr) => { resolve({
+      code: error && error.code ? error.code : 0,
+      error,
+      stdout,
+      stderr })
+    })
+  })}
 
 const readFile = (path, input_delimiter) => {
     let raw = fs.readFileSync(path, {encoding:'utf-8'});
@@ -72,5 +86,6 @@ module.exports = {
     lowerCase,
     removeKeyword,
     removeBeforeKeyword,
-    removeAfterKeyword
+    removeAfterKeyword,
+    cli
 }
